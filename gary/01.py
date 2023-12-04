@@ -26,6 +26,7 @@ def main():
   for l in lines:
     x = getnum(l, 1) * 10 + getnum(l, -1)
     s += x
+
   print(s)
 
 
