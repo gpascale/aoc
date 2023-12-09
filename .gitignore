@@ -1,3 +1,7 @@
 .vscode
 .DS_Store
 *-checkpoint.*
+.prettierrc
+node_modules/
+package.json
+yarn.lock
