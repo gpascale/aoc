@@ -180,7 +180,7 @@ def edit(grid, dist):
       #  grid[y][x] = str(dist[y][x] % 10)
 
 def main():
-  grid = get_grid(data)
+  grid = get_grid(data6)
   pprint(grid)
   dist = make_dist(grid)
   seed = find_start(grid)
