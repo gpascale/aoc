@@ -13,7 +13,7 @@ def solve_part_1(grid):
             is_part_num = False
             for i in range(max(row - 1, 0), min(row + 2, H)):
                 for j in range(max(start - 1, 0), min(end + 1, W)):
-                    if grid[i][j] in "!@#$%^&*()/+-=~,<>?":
+                    if grid[i][j] in "!@#$%.&*()/+-=~,<>?":
                         is_part_num = True
             if is_part_num:
                 ret += int(num)
@@ -34,7 +34,7 @@ def solve_part_2(grid):
 
     for row in range(H):
         for col in range(W):
-            if grid[row][col] not in "!@#$%^&*()/+-=~,<>?":
+            if grid[row][col] not in "!@#$%.&*()/+-=~,<>?":
                 continue
             gears = []
             for r in range(max(row - 1, 0), min(row + 2, H)):

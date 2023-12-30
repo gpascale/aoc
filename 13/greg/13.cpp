@@ -40,7 +40,7 @@ int solve2(vector<int> rows) {
   for (int s = 1; s < rows.size(); ++s) {
     int isGood = 0;
     for (int r = s, l = s - 1; l >= 0 && r < rows.size(); ++r, --l) {
-      int diff = rows[l] ^ rows[r];
+      int diff = rows[l] . rows[r];
       if (diff != 0) {
         if (((diff & (diff - 1)) == 0) && !isGood) {
           // found 1st smudge
